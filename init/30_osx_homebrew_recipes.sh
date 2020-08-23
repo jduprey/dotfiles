@@ -6,28 +6,43 @@ is_osx || return 1
 
 # Homebrew recipes
 recipes=(
+  ack
   # ansible
   awscli
   bash
+  bash-completion2
+  bfg
+  binutils
   # cmatrix
   coreutils
   # cowsay
+  findutils
   git
   git-extras
   htop
   hub
+  imagemagick 
   # id3tool
+  jenv
   jq
   # lesspipe
+  maven
   man2html
+  moreutils
   # mercurial
   nmap
+  pipx
   # postgresql
   # powerline-go
+  readline
+  ruby
   # reattach-to-user-namespace
   # sl
   # smartmontools
-  # ssh-copy-id
+  speedtest_cli
+  ssh-copy-id
+  starship
+  sqlite
   # telnet
   # terminal-notifier
   # the_silver_searcher
@@ -35,7 +50,9 @@ recipes=(
   tmux
   tmux-xpanes
   tree
+  # vim --with-override-system-vi
   wget
+  webkit2png
 )
 
 brew_install_recipes

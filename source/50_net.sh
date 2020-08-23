@@ -16,3 +16,5 @@ function pingtest() {
   for c in say spd-say; do [[ "$(which $c)" ]] && break; done
   ping ${1:-8.8.8.8} | perl -pe '/bytes from/ && `'$c' ping`'
 }
+
+export no_proxy=localhost,127.0.0.0/8,192.168.0.0/16

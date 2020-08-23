@@ -26,6 +26,7 @@ casks=(
   # bettertouchtool
   # betterzip
   # caprine
+  cakebrew
   # charles
   # chromium
   # chronosync
@@ -41,6 +42,7 @@ casks=(
   iterm2
   # karabiner-elements
   # licecap
+  macdown
   # macvim
   # microsoft-remote-desktop-beta
   # midi-monitor
@@ -81,7 +83,7 @@ casks=(
   # Fonts
   font-mplus
   font-mplus-nerd-font
-  font-mplus-nerd-font-mono
+  # font-mplus-nerd-font-mono # Not available?
 )
 
 # Install Homebrew casks.
@@ -109,3 +111,5 @@ if (( ${#cps[@]} > 0 )); then
     cp -R "$target" ~/Library/ColorPickers/
   done
 fi
+
+brew cleanup

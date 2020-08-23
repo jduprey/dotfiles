@@ -7,3 +7,8 @@ if [[ ! "$VOLTA_HOME" ]]; then
   volta install yarn
   volta install tsc
 fi
+
+# TODO decide what to do with NVM - or use volta
+if [ ! -d ~/.nvm ] ; then
+	echo "!! Install nvm at https://github.com/creationix/nvm"
+fi
