@@ -25,10 +25,11 @@ fi
 # export LDFLAGS="-L$BREW_OPENSSL_PATH/lib -L$BREW_READLINE_PATH/lib -L$BRWE_ZLIB_PATH/lib"
 export PATH="/Users/jduprey/.pyenv/bin:$PATH"
 if which pyenv > /dev/null; then
-    # eval "$(pyenv init -)"
+    eval "$(pyenv init - $SHELL)"
     # MUCH FASTER LOAD
-    eval "$(pyenv init - $SHELL --no-rehash)"
-    eval "$(pyenv virtualenv-init -)"
+    eval "$(pyenv init - --no-rehash)"
+    # eval "$(pyenv virtualenv-init - $SHELL --no-rehash)"
+    eval "$(pyenv virtualenv-init - )"
 
     PYTHON_VERSION=`python --version 2>&1`
     PYVENV=`pyenv version | cut -d' ' -f1`
