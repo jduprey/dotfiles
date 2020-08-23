@@ -79,7 +79,7 @@ casks=(
   # sonos
   # xbox360-controller-driver-unofficial
   # Fonts
-  font-m-plus
+  font-mplus
   font-mplus-nerd-font
   font-mplus-nerd-font-mono
 )
