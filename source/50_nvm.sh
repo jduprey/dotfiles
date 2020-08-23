@@ -1,3 +1,8 @@
+if [[ "$use_nvm" != "1" ]] ; then
+	return 1
+fi
+echo "Setting up NVM"
+
 if [ -d ~/.nvm ] ; then
 	# NodeJS env
 	export PATH=./node_modules/.bin:$PATH

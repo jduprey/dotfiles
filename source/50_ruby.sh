@@ -1,3 +1,8 @@
+if [[ "$use_ruby" != "1" ]] ; then
+	return 1
+fi
+echo "Setting up Ruby"
+
 export PATH
 
 if [[ -e /etc/profile.d/rvm.sh ]]; then

@@ -1,3 +1,8 @@
+if [[ "$use_python" != "1" ]] ; then
+	return 1
+fi
+echo "Setting up Python"
+
 ### Install
 ## curl -L https://github.com/pyenv/pyenv-installer/raw/master/bin/pyenv-installer | bash
 
@@ -20,7 +25,9 @@ fi
 # export LDFLAGS="-L$BREW_OPENSSL_PATH/lib -L$BREW_READLINE_PATH/lib -L$BRWE_ZLIB_PATH/lib"
 export PATH="/Users/jduprey/.pyenv/bin:$PATH"
 if which pyenv > /dev/null; then
-    eval "$(pyenv init -)"
+    # eval "$(pyenv init -)"
+    # MUCH FASTER LOAD
+    eval "$(pyenv init - $SHELL --no-rehash)"
     eval "$(pyenv virtualenv-init -)"
 
     PYTHON_VERSION=`python --version 2>&1`
