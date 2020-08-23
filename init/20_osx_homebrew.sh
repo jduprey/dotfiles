@@ -14,6 +14,9 @@ e_header "Updating Homebrew"
 brew doctor
 brew update
 
+e_header "Upgrading Any Outdated Homebrew Dependencies"
+brew upgrade
+
 # Functions used in subsequent init scripts.
 
 # Tap Homebrew kegs.
