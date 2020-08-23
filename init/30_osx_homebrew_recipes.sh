@@ -21,7 +21,7 @@ recipes=(
   git-extras
   htop
   hub
-  imagemagick 
+  imagemagick
   # id3tool
   jenv
   jq
@@ -34,6 +34,7 @@ recipes=(
   pipx
   # postgresql
   # powerline-go
+  pre-commit
   readline
   ruby
   # reattach-to-user-namespace

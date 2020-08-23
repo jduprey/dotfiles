@@ -29,8 +29,7 @@ if which pyenv > /dev/null; then
 fi
 
 
-# Pipx 
+# Pipx
 # Created by `userpath` on 2019-11-25 18:33:31
 export PATH="$PATH:/Users/jduprey/.local/bin"
 eval "$(register-python-argcomplete pipx)"
-

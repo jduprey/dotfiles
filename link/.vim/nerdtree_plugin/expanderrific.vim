@@ -43,4 +43,3 @@ function! NERDTreeExpanderrificCollapse(node)
     call node.putCursorHere(0, 0)
   endif
 endfunction
-

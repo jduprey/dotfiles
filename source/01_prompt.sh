@@ -17,6 +17,6 @@ function prompt_zero() {
   PS1='$ '
 }
 
-if [[ "$(type -P starship)" ]]; then 
+if [[ "$(type -P starship)" ]]; then
   eval "$(starship init bash)"
 fi
