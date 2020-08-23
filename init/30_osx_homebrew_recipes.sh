@@ -45,7 +45,7 @@ recipes=(
   starship
   sqlite
   # telnet
-  # terminal-notifier
+  terminal-notifier
   # the_silver_searcher
   # thefuck
   tmux
