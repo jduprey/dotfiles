@@ -18,7 +18,7 @@ if [ -d $BREW_COREUTILS_PATH/libexec/gnubin ] ; then
 	export MANPATH=$BREW_COREUTILS_PATH/libexec/gnuman:$BREW_COREUTILS_PATH/share/man:$MANPATH
 	export CPPFLAGS="-O2 -I$BREW_OPENSSL_PATH/include  -I$BREW_READLINE_PATH/include -I$(xcrun --show-sdk-path)/usr/include -I$BREW_ZLIB_PATH/include $CPPFLAGS"
 	export CFLAGS="-O2 -I$BREW_OPENSSL_PATH/include  -I$BREW_READLINE_PATH/include -I$(xcrun --show-sdk-path)/usr/include -I$BREW_ZLIB_PATH/include $CFLAGS"
-	export LDFLAGS="-L/usr/local/opt/binutils/lib -L$BREW_OPENSSL_PATH/lib -L$BREW_READLINE_PATH/lib -L$BRWE_ZLIB_PATH/lib"
+	export LDFLAGS="-L/usr/local/opt/binutils/lib -L$BREW_OPENSSL_PATH/lib -L$BREW_READLINE_PATH/lib -L$BREW_ZLIB_PATH/lib"
 	export AR=/usr/bin/ar
 else
 	echo "!! No gnu core utils installed?"
