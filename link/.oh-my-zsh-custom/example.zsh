@@ -8,3 +8,8 @@
 # brainstormr=~/Projects/development/planetargon/brainstormr
 # cd $brainstormr
 #
+# for f in `ls -1 ~/.dotfiles/source/*.sh`;
+# do
+# 	echo "Sourcing $f"
+#     source $f
+# done

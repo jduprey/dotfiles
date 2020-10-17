@@ -5,20 +5,25 @@ export OSX_VERSION=`sw_vers -productVersion`
 export OSX_MAJOR_VERSION=`echo $OSX_VERSION | sed -e's/.[0-9]*$//'`
 
 # APPLE, Y U PUT /usr/bin B4 /usr/local/bin?!
-PATH="/usr/local/bin:$(path_remove /usr/local/bin)"
+# TODO: JWD this doesn't work with ZSH: PATH="/usr/local/bin:$(path_remove /usr/local/bin)"
 export PATH
 
 # Trim new lines and copy to clipboard
 alias c="tr -d '\n' | pbcopy"
 
 # Make 'less' more.
-[[ "$(type -P lesspipe.sh)" ]] && eval "$(lesspipe.sh)"
+# [[ "$(type -P lesspipe.sh)" ]] && eval "$(lesspipe.sh)"
 
 # Start ScreenSaver. This will lock the screen if locking is enabled.
 alias ss="open /System/Library/Frameworks/ScreenSaver.framework/Versions/A/Resources/ScreenSaverEngine.app"
 
 # Iterm 2 shell integration
-test -e "${HOME}/.iterm2_shell_integration.bash" && source "${HOME}/.iterm2_shell_integration.bash"
+sname=`/usr/bin/basename $SHELL`
+if [[ "$sname"="zsh" ]]; then
+    test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
+else
+    test -e "${HOME}/.iterm2_shell_integration.bash" && source "${HOME}/.iterm2_shell_integration.bash"
+fi
 
 alias p4merge=/Applications/p4merge.app/Contents/MacOS/p4merge
 
