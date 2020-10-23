@@ -74,7 +74,7 @@ ZSH_CUSTOM=~/.oh-my-zsh-custom
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(docker git pyenv python vscode)
+plugins=(brew docker git pyenv python vscode)
 
 source $ZSH/oh-my-zsh.sh
 
