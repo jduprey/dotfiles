@@ -8,6 +8,7 @@ alias gpup='gp --set-upstream origin $(gbs)'
 alias gpa='gp --all'
 alias gu='git pull'
 alias gl='git log'
+alias gll="git log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit"
 alias gg='gl --decorate --oneline --graph --date-order --all'
 alias gs='git status'
 alias gst='gs'
