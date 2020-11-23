@@ -10,6 +10,7 @@ recipes=(
   # ansible
   awscli
   bash
+  bartender
   bash-completion2
   bfg
   binutils
