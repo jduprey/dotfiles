@@ -20,10 +20,12 @@ recipes=(
   findutils
   git
   git-extras
+  github
   gnu-sed
   htop
   hub
   imagemagick
+  iterm2
   # id3tool
   jenv
   jq
@@ -54,6 +56,7 @@ recipes=(
   tmux-xpanes
   tree
   # vim --with-override-system-vi
+  visual-studio-code
   wget
   webkit2png
 )
