@@ -2,7 +2,7 @@
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
-export ZSH="/Users/jduprey/.oh-my-zsh"
+export ZSH="$HOME/.oh-my-zsh"
 if [ ! -d $ZSH ] ; then
     echo "!! Missing $ZSH.  Is Oh-My-ZSH installed?"
     echo "https://ohmyz.sh/"

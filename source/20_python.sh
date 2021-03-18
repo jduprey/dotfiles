@@ -23,7 +23,7 @@ fi
 # export AR=/usr/bin/ar
 # export CFLAGS="-O2 -I$BREW_OPENSSL_PATH/include  -I$BREW_READLINE_PATH/include -I$(xcrun --show-sdk-path)/usr/include -I$BREW_ZLIB_PATH/include"
 # export LDFLAGS="-L$BREW_OPENSSL_PATH/lib -L$BREW_READLINE_PATH/lib -L$BRWE_ZLIB_PATH/lib"
-export PATH="/Users/jduprey/.pyenv/bin:$PATH"
+export PATH="$HOME/.pyenv/bin:$PATH"
 if [ -x "$(command -v pyenv)" ] && [ -z "$PYENV_INITIALIZED" ]; then
     echo "Initializing pyenv..."
 
@@ -44,7 +44,7 @@ fi
 
 # Pipx
 # Created by `userpath` on 2019-11-25 18:33:31
-export PATH="$PATH:/Users/jduprey/.local/bin"
+export PATH="$PATH:$HOME/.local/bin"
 eval "$(register-python-argcomplete pipx)"
 
 export PYTHON_INITIALIZED=1
